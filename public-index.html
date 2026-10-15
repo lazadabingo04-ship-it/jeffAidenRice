@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aiden Rice Wholesale and Retail</title>
+<style>
+:root{--bg:#faf6ec;--card:#fff;--tx:#2b2a22;--mu:#76725f;--ac:#3f6b2f;--ac2:#e9f0e1;--bd:#e3dcc6;--wa:#b4531b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1d17;--card:#26281f;--tx:#efeadb;--mu:#a29e8a;--ac:#8fc279;--ac2:#2f3a28;--bd:#3a3c2f;--wa:#e69a64}}
+:root[data-theme="dark"]{--bg:#1c1d17;--card:#26281f;--tx:#efeadb;--mu:#a29e8a;--ac:#8fc279;--ac2:#2f3a28;--bd:#3a3c2f;--wa:#e69a64}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--ac);color:#fff;padding:18px 16px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+header h1{margin:0;font:700 1.3rem Georgia,serif}header small{opacity:.85;display:block}
+nav button{background:transparent;color:#fff;border:1px solid #fff8;border-radius:20px;padding:6px 14px;margin-left:6px;cursor:pointer}
+nav button.on{background:#fff;color:var(--ac)}
+main{max-width:980px;margin:0 auto;padding:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px}
+.card h3{margin:0 0 4px}.mu{color:var(--mu);font-size:.88rem}.pr{font-weight:700;color:var(--ac)}
+button.p,button.s{border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font-size:.95rem}
+button.p{background:var(--ac);color:#fff}button.s{background:var(--ac2);color:var(--ac)}button:disabled{opacity:.4}
+input,select,textarea{width:100%;padding:8px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{flex:1;min-width:90px}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:560px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--bd);font-size:.92rem}
+.tag{display:inline-block;padding:2px 8px;border-radius:10px;background:var(--ac2);color:var(--ac);font-size:.78rem}.low{background:#f6dcc8;color:var(--wa)}
+.tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}.tabs button{flex:0}
+.hide{display:none}h2{font-family:Georgia,serif}
+html{scroll-behavior:smooth}
+.hero{border-radius:16px;padding:34px 24px;margin-bottom:16px;color:#fff;background:radial-gradient(circle at 85% 20%,#e8c35a55,transparent 45%),linear-gradient(135deg,#2f5a22,#5b8f3a);position:relative;overflow:hidden}
+.hero:after{content:"🌾";position:absolute;right:14px;bottom:-14px;font-size:7rem;opacity:.25}
+.hero h2{margin:0 0 6px;font-size:1.9rem;line-height:1.15}.hero p{margin:0 0 16px;max-width:480px;opacity:.95}
+.hero a,.promo a{display:inline-block;text-decoration:none;padding:10px 18px;border-radius:24px;font-weight:600;margin:0 8px 6px 0}
+.hero a.b1{background:#f3c94d;color:#2b2a22}.hero a.b2{border:1px solid #fff9;color:#fff}
+.badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.badges div{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;font-size:.9rem}.badges b{display:block}
+.promo{background:#f3c94d;color:#2b2a22;border-radius:14px;padding:16px 20px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.promo b{font-size:1.1rem}.promo a{background:#2b2a22;color:#fff;margin:0}
+.img{height:90px;margin:-14px -14px 10px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;font-size:2.6rem}
+.step{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 12px}
+.step i{font-style:normal;background:var(--ac);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;flex:none;font-weight:700}
+.qty{display:flex;gap:6px;margin:6px 0}.qty button{flex:1;padding:6px 0;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:8px;cursor:pointer}
+.qty button.pm{flex:0 0 36px;font-size:1.1rem}.qty input{text-align:center;flex:1.3}
+#bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--ac);color:#fff;border-radius:14px;padding:12px 16px;display:flex;justify-content:space-between;text-decoration:none;font-weight:600;box-shadow:0 4px 16px #0004;z-index:20;max-width:956px;margin:0 auto}
+footer{text-align:center;color:var(--mu);font-size:.88rem;padding:24px 0 70px}
+</style></head><body>
+<header><div><h1>🌾 Aiden Rice Wholesale and Retail</h1><small>Fresh rice by the sack</small></div>
+<nav><button id="nShop" class="hide">View Store</button><button id="nBack" class="hide">Back Office</button></nav></header>
+<main>
+<section id="shop">
+ <div class="hero"><h2>Quality rice, delivered fresh to your door</h2><p>Premium and everyday rice in 25 kg sacks for your carinderia, store or business.</p><a class="b1" href="#prods">Shop rice now</a><a class="b2" href="#how">How to order</a></div>
+ <div class="badges"><div><b>🌾 Carefully sourced</b>Clean, well-milled rice</div><div><b>🚚 Home delivery</b>Sack orders delivered</div><div><b>💰 Wholesale prices</b>Best price per sack</div><div><b>📞 Friendly service</b>We confirm every order</div></div>
+ <div class="promo"><div><b>Wholesale only: order by the sack</b><br>Each sack is 25 kg. Choose how many sacks you need.</div><a href="#prods">See prices</a></div>
+ <h2 style="margin-top:0">Our rice</h2>
+ <div id="prods" class="grid"></div>
+ <div id="mine"></div>
+ <h2 id="how">How to order</h2>
+ <div class="grid" style="margin-bottom:20px"><div class="step"><i>1</i>Pick your rice and the number of sacks</div><div class="step"><i>2</i>Enter your name, number and address</div><div class="step"><i>3</i>We call to confirm, then deliver</div></div>
+ <h2 id="cartTop">Your order</h2>
+ <div class="card"><div id="cart" class="mu">Your cart is empty.</div>
+  <div id="checkout" class="hide">
+   <hr style="border:0;border-top:1px solid var(--bd)">
+   <div class="row"><input id="cName" placeholder="Full name"><input id="cPhone" placeholder="Mobile number"></div>
+   <p><input id="cAddr" placeholder="Delivery address"></p>
+   <p><textarea id="cNote" rows="2" placeholder="Notes (optional)"></textarea></p>
+   <button class="p" id="place">Place order</button> <span id="msg" class="mu"></span>
+  </div></div>
+</section>
+<section id="back" class="hide">
+ <div class="tabs"><button class="s" data-t="tOrders">Orders</button><button class="s" data-t="tProd">Products &amp; Prices</button><button class="s" data-t="tSup">Supplies</button><button class="s" data-t="tCash">Cash Flow</button></div>
+ <div id="tOrders"></div>
+ <div id="tProd" class="hide"></div>
+ <div id="tSup" class="hide"></div>
+ <div id="tCash" class="hide"></div>
+</section>
+<footer>🌾 Aiden Rice Wholesale and Retail<br>Thank you for supporting our small business!<br><a href="#" id="staff" style="color:inherit;opacity:.5;font-size:.8rem">Staff login</a></footer>
+</main>
+<a id="bar" class="hide" href="#cartTop"><span id="barN"></span><span id="barT"></span></a>
+<script src="/db.js"></script>
+<script>
+function bar(t,n){const b=document.getElementById("bar");b.classList.toggle("hide",!t||!document.getElementById("shop")||document.getElementById("shop").classList.contains("hide"));document.getElementById("barN").textContent="🛒 "+n+" item(s) in your order";document.getElementById("barT").textContent=peso(t)+" · Checkout →"}
+const $=s=>document.querySelector(s),peso=n=>"₱"+Number(n||0).toLocaleString("en-PH",{maximumFractionDigits:2});
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let db=null,isAdmin=false,products=[],orders=[],supplies=[],expenses=[],per="30",cart={},offline=false;
+const demo=[{id:"jasmine",name:"Jasmine Rice",retail:58,wholesale:52,min:25,stock:500,cost:46},{id:"dinorado",name:"Dinorado Premium",retail:68,wholesale:62,min:25,stock:300,cost:55},{id:"sinandomeng",name:"Sinandomeng",retail:52,wholesale:47,min:25,stock:800,cost:41}];
+function unit(p,kg){return kg>=p.min?p.wholesale:p.retail}
+function renderShop(){
+ $("#prods").innerHTML=products.map(p=>`<div class="card"><div class="img" style="background:linear-gradient(135deg,hsl(${[...p.name].reduce((a,c)=>a+c.charCodeAt(0),0)%60+70},40%,60%),hsl(${[...p.name].reduce((a,c)=>a+c.charCodeAt(0),0)%60+100},45%,40%))">🍚</div><h3>${esc(p.name)}</h3>
+ <div class="pr" style="font-size:1.15rem">${peso(p.wholesale*p.min)} <span class="mu">per ${p.min} kg sack</span></div>
+ <div class="mu">${peso(p.wholesale)} per kg</div>
+ <div style="margin-top:4px"><span class="tag">Wholesale only</span></div>
+ <p class="mu">${p.stock>0?(p.stock<50?"Limited stock":"In stock"):"Out of stock"}</p>
+ <div class="qty"><button class="pm" data-step="-1" data-p="${esc(p.id)}">−</button><input type="number" min="1" value="1" id="q_${esc(p.id)}" aria-label="Sacks"><button class="pm" data-step="1" data-p="${esc(p.id)}">+</button></div>
+ <div class="mu" style="margin:2px 0 6px">number of sacks (${p.min} kg each)</div>
+ <button class="p" style="width:100%" data-add="${esc(p.id)}" ${p.stock>=p.min?"":"disabled"}>${p.stock>=p.min?"Add to order":"Out of stock"}</button></div>`).join("")||'<p class="mu">No products yet.</p>';
+ renderCart()}
+function renderCart(){
+ const ids=Object.keys(cart).filter(i=>products.find(p=>p.id===i));let tot=0;
+ if(!ids.length){bar(0);$("#cart").textContent="Your cart is empty.";$("#checkout").classList.add("hide");return}
+ $("#cart").innerHTML='<div class="tw"><table>'+ids.map(i=>{const p=products.find(x=>x.id===i),kg=cart[i],u=unit(p,kg),t=u*kg;tot+=t;
+ return `<tr><td>${esc(p.name)}</td><td>${kg/p.min} sack(s) (${kg} kg)</td><td>${peso(u)}/kg ${kg>=p.min?'<span class="tag">wholesale</span>':""}</td><td>${peso(t)}</td><td><button class="s" data-rm="${esc(i)}">✕</button></td></tr>`}).join("")+`</table></div><p><b>Total: ${peso(tot)}</b></p>`;bar(tot,ids.length);
+ $("#checkout").classList.remove("hide")}
+document.addEventListener("click",async e=>{
+ const t=e.target;
+ if(t.dataset.add){const pp=products.find(x=>x.id===t.dataset.add),kg=Math.floor(+$("#q_"+t.dataset.add).value)*pp.min;if(kg>0&&(cart[t.dataset.add]||0)+kg>pp.stock){alert("Sorry, only "+Math.floor(pp.stock/pp.min)+" sack(s) available.");return}if(kg>0){cart[t.dataset.add]=(cart[t.dataset.add]||0)+kg;renderCart();t.textContent="Added ✓";setTimeout(()=>{t.textContent="Add to order"},1200)}}
+ if(t.dataset.step){const i=$("#q_"+t.dataset.p);i.value=Math.max(1,(+i.value||1)+ +t.dataset.step)}
+ if(t.dataset.q)$("#q_"+t.dataset.p).value=t.dataset.q;
+ if(t.dataset.rm){delete cart[t.dataset.rm];renderCart()}
+ if(t.dataset.t){["tOrders","tProd","tSup","tCash"].forEach(x=>$("#"+x).classList.toggle("hide",x!==t.dataset.t))}
+ if(t.dataset.st){const o=orders.find(x=>x.id===t.dataset.st);t.textContent="Saving...";try{document.activeElement.blur()}catch(x){}try{await setStatus(o,t.dataset.v)}catch(err){alert("Could not update the order: "+(err&&err.message||err))}}
+});
+$("#nShop").onclick=()=>{$("#shop").classList.remove("hide");$("#back").classList.add("hide");$("#nShop").classList.add("on");$("#nBack").classList.remove("on")};
+$("#nBack").onclick=()=>{$("#back").classList.remove("hide");$("#shop").classList.add("hide");$("#nBack").classList.add("on");$("#nShop").classList.remove("on")};
+$("#place").onclick=async()=>{
+ const name=$("#cName").value.trim(),phone=$("#cPhone").value.trim(),addr=$("#cAddr").value.trim();
+ if(!name||!phone||!addr){$("#msg").textContent="Please fill in name, phone and address.";return}
+ const items=Object.keys(cart).map(i=>{const p=products.find(x=>x.id===i),kg=cart[i];return{id:i,name:p.name,kg,price:unit(p,kg)}});
+ const total=items.reduce((s,i)=>s+i.kg*i.price,0);
+ const order={name,phone,addr,note:$("#cNote").value.trim(),items,total,status:"New",created:Date.now()};
+ try{const uid=await(await claude.use("user")).id();const ref=db.doc("orders/"+uid);let prev=[];try{const sn=await ref.get();if(sn.exists)prev=sn.data().orders||[]}catch(x){}await ref.set({orders:[...prev,order]});$("#msg").textContent="✅ Order received! We will contact you to confirm.";cart={};renderCart();$("#checkout").classList.remove("hide");$("#cart").textContent="Thank you for your order!";$("#checkout").classList.add("hide")}
+ catch(err){$("#msg").textContent="Could not send the order. Please call us instead."}};
+async function setStatus(o,st){
+ const od={status:st,stockOut:false,paidAt:o.paidAt||0,prev:o.status};
+ let out=o.stockOut;if(out===undefined)out=o.status==="Confirmed"||o.status==="Delivered";
+ if(st==="Confirmed"||st==="Delivered"){if(!od.paidAt)od.paidAt=Date.now()}else od.paidAt=0;
+ const sign=(st==="Delivered"&&!out)?-1:(st!=="Delivered"&&out)?1:0;
+ if(sign)for(const it of o.items){const p=products.find(x=>x.id===it.id);if(p)await db.doc("products/"+p.id).update({stock:Math.max(0,p.stock+sign*it.kg)})}
+ od.stockOut=st==="Delivered";
+ await db.doc("orderStatus/"+o.key).set(od);stat[o.key]=od;mergeOrders();renderAdmin()}
+function renderOrders(){
+ $("#tOrders").innerHTML=orders.length?orders.map(o=>`<div class="card" style="margin-bottom:10px"><div class="row"><b>${esc(o.name)}</b><span class="mu">${esc(o.phone)}</span><span class="tag">${esc(o.status)}</span><b>${peso(o.total)}</b></div>
+ <div class="mu">${esc(o.addr)} · ${new Date(o.created).toLocaleString()}</div>
+ <div>${o.items.map(i=>`${esc(i.name)} ${i.kg}kg @ ${peso(i.price)}`).join("<br>")}</div>${o.note?`<div class="mu">Note: ${esc(o.note)}</div>`:""}
+ <p>${["New","Confirmed","Delivered","Cancelled"].map(s=>`<button class="${o.status===s?"p":"s"}" data-st="${o.id}" data-v="${s}" ${({New:["Confirmed","Cancelled"],Confirmed:["Delivered","Cancelled"]}[o.status]||[]).includes(s)?"":"disabled"}>${s}</button>`).join(" ")} <button class="s" data-st="${o.id}" data-v="${esc(o.prev||"")}" ${o.prev?"":"disabled"}>↩ Undo</button></p></div>`).join(""):'<p class="mu">No orders yet.</p>';
+ $("#tOrders").insertAdjacentHTML("afterbegin",'<p class="mu">Confirmed: the sale counts as cash in. Delivered: kilos are deducted from stock. Cancelled: the sale is removed from cash in, any deducted stock is returned, and the customer sees the order as cancelled.</p>')}
+function renderProd(){
+ $("#tProd").innerHTML=`<div class="tw"><table><tr><th>Product</th><th>Retail/kg</th><th>Wholesale/kg</th><th>Wholesale min kg</th><th>Cost/kg</th><th>Stock kg</th><th></th></tr>`+products.map(p=>`<tr data-id="${esc(p.id)}"><td><input value="${esc(p.name)}" data-f="name"></td>${["retail","wholesale","min","cost","stock"].map(f=>`<td><input type="number" value="${p[f]}" data-f="${f}"></td>`).join("")}<td><button class="p" data-save="1">Save</button> <button class="s" data-del="1">Delete</button></td></tr>`).join("")+`</table></div>
+ <h3>Add product</h3><div class="row"><input id="nn" placeholder="Name"><input id="nr" type="number" placeholder="Retail/kg"><input id="nw" type="number" placeholder="Wholesale/kg"><input id="nm" type="number" placeholder="Wholesale min kg" value="25"><input id="nc" type="number" placeholder="Cost/kg"><input id="ns" type="number" placeholder="Stock kg"><button class="p" id="addP" style="flex:0">Add</button></div>
+ ${products.length?"":'<p><button class="s" id="seed">Load 3 sample products</button></p>'}
+ <p class="mu">Low stock (under 50 kg) is flagged. Margin is shown in the Supplies tab.</p>`}
+document.addEventListener("click",async e=>{
+ const t=e.target,tr=t.closest("tr");
+ if(t.dataset.save&&tr){const d={};tr.querySelectorAll("[data-f]").forEach(i=>d[i.dataset.f]=i.type==="number"?+i.value:i.value);await db.doc("products/"+tr.dataset.id).update(d);t.textContent="Saved ✓"}
+ if(t.dataset.del&&tr&&confirm("Delete this product?"))await db.doc("products/"+tr.dataset.id).delete();
+ if(t.id==="addP"){const name=$("#nn").value.trim();if(!name)return;const id=name.toLowerCase().replace(/[^a-z0-9]+/g,"-")+"-"+Date.now().toString(36);await db.doc("products/"+id).set({name,retail:+$("#nr").value||0,wholesale:+$("#nw").value||0,min:+$("#nm").value||25,cost:+$("#nc").value||0,stock:+$("#ns").value||0})}
+ if(t.id==="seed")for(const p of demo){const{id,...d}=p;await db.doc("products/"+id).set(d)}
+ if(t.id==="addS"){const pid=$("#sp").value,pp0=products.find(x=>x.id===pid),sz=pp0?pp0.min||25:25,kg=(+$("#sk").value)*sz,cost=(+$("#sc").value)/sz;if(!pid||!(kg>0))return;const p=products.find(x=>x.id===pid);
+  await db.collection("supplies").add({pid,pname:p.name,supplier:$("#ss").value.trim(),kg,cost,date:Date.now()});await db.doc("products/"+pid).update({stock:p.stock+kg,cost:cost||p.cost})}
+});
+function renderSup(){
+ const rows=supplies.sort((a,b)=>b.date-a.date);
+ $("#tSup").innerHTML=`<div class="card"><b>Record a delivery from a supplier</b><p class="mu">Adds the kilos to stock and updates the cost price.</p>
+ <div class="row"><select id="sp">${products.map(p=>`<option value="${esc(p.id)}">${esc(p.name)}</option>`).join("")}</select><input id="ss" placeholder="Supplier"><input id="sk" type="number" placeholder="Sacks received"><input id="sc" type="number" placeholder="Cost per sack"><button class="p" id="addS" style="flex:0">Add</button></div></div>
+ <h3>Stock &amp; margins</h3><div class="tw"><table><tr><th>Product</th><th>Stock</th><th>Cost/sack</th><th>Profit/sack</th><th>Stock value</th></tr>`+products.map(p=>`<tr><td>${esc(p.name)}</td><td>${+(p.stock/(p.min||25)).toFixed(1)} sacks ${p.stock<50?'<span class="tag low">Low</span>':""}</td><td>${peso(p.cost*(p.min||25))}</td><td>${peso((p.wholesale-p.cost)*(p.min||25))}</td><td>${peso(p.stock*p.cost)}</td></tr>`).join("")+`</table></div>
+ <h3>Delivery history</h3><div class="tw"><table><tr><th>Date</th><th>Product</th><th>Supplier</th><th>Sacks</th><th>Cost/sack</th><th>Total</th></tr>`+rows.map(r=>`<tr><td>${new Date(r.date).toLocaleDateString()}</td><td>${esc(r.pname)}</td><td>${esc(r.supplier)}</td><td>${+(r.kg/25).toFixed(1)}</td><td>${peso(r.cost*25)}</td><td>${peso(r.kg*r.cost)}</td></tr>`).join("")+"</table></div>"}
+function renderCash(){
+ const days=+per,from=days?Date.now()-days*864e5:0,tx=[];
+ orders.filter(o=>o.status==="Confirmed"||o.status==="Delivered").forEach(o=>tx.push({d:o.paidAt||o.created,t:"Sale: "+o.name,i:o.total,o:0}));
+ supplies.forEach(s=>tx.push({d:s.date,t:"Supplier: "+s.pname+" "+s.kg+" kg"+(s.supplier?" ("+s.supplier+")":""),i:0,o:s.kg*s.cost}));
+ expenses.forEach(e=>tx.push({d:e.date,t:e.note,i:e.type==="in"?e.amount:0,o:e.type==="out"?e.amount:0,x:e.id}));
+ const f=tx.filter(x=>x.d>=from).sort((a,b)=>b.d-a.d),I=f.reduce((s,x)=>s+x.i,0),O=f.reduce((s,x)=>s+x.o,0),N=I-O;
+ const exp=orders.filter(o=>o.status==="New").reduce((s,o)=>s+o.total,0);
+ $("#tCash").innerHTML=`<div class="row" style="margin-bottom:10px"><select id="cp" style="max-width:200px">${[["1","Today"],["7","Last 7 days"],["30","Last 30 days"],["0","All time"]].map(([v,l])=>`<option value="${v}" ${per===v?"selected":""}>${l}</option>`).join("")}</select></div>
+ <div class="grid"><div class="card"><div class="mu">Cash in (confirmed orders + other income)</div><div class="pr" style="font-size:1.4rem">${peso(I)}</div></div>
+ <div class="card"><div class="mu">Cash out (supplies + expenses)</div><div style="font-size:1.4rem;font-weight:700;color:var(--wa)">${peso(O)}</div></div>
+ <div class="card"><div class="mu">Net cash flow</div><div style="font-size:1.4rem;font-weight:700;color:${N<0?"var(--wa)":"var(--ac)"}">${peso(N)}</div></div>
+ <div class="card"><div class="mu">Waiting for your confirmation (new orders)</div><div style="font-size:1.4rem;font-weight:700">${peso(exp)}</div></div></div>
+ <div class="card" style="margin:12px 0"><b>Record other income or expense</b><p class="mu">For things like delivery fuel, rent, salary or other income. Supplier deliveries are already counted from the Supplies tab.</p>
+ <div class="row"><select id="et"><option value="out">Expense (cash out)</option><option value="in">Income (cash in)</option></select><input id="en" placeholder="Description"><input id="ea" type="number" placeholder="Amount"><button class="p" id="addE" style="flex:0">Add</button></div></div>
+ <h3>Transactions</h3><div class="tw"><table><tr><th>Date</th><th>Details</th><th>Cash in</th><th>Cash out</th><th></th></tr>`+(f.map(x=>`<tr><td>${new Date(x.d).toLocaleDateString()}</td><td>${esc(x.t)}</td><td>${x.i?peso(x.i):""}</td><td>${x.o?peso(x.o):""}</td><td>${x.x?`<button class="s" data-dx="${esc(x.x)}">✕</button>`:""}</td></tr>`).join("")||'<tr><td colspan="5" class="mu">No transactions in this period.</td></tr>')+"</table></div>"}
+document.addEventListener("change",e=>{if(e.target.id==="cp"){per=e.target.value;renderCash()}});
+document.addEventListener("click",async e=>{const t=e.target;
+ if(t.id==="addE"){const note=$("#en").value.trim(),amount=+$("#ea").value;if(!note||!(amount>0))return;await db.collection("expenses").add({note,amount,type:$("#et").value,date:Date.now()})}
+ if(t.dataset.dx&&confirm("Delete this entry?"))await db.doc("expenses/"+t.dataset.dx).delete()});
+let mine=[],mineRaw=[],ordRaw=[],stat={};function mergeOrders(){orders=ordRaw.map(o=>({...o,...(stat[o.key]||{})})).sort((a,b)=>b.created-a.created)}
+const lbl={New:"Waiting for confirmation",Confirmed:"Confirmed",Delivered:"Delivered",Cancelled:"Cancelled"};
+function renderProd(){
+ const S=p=>p.min||25;
+ $("#tProd").innerHTML=`<div class="tw"><table><tr><th>Product name</th><th>Cost (per sack)</th><th>Price (per sack)</th><th>Stocks (sacks)</th><th></th></tr>`+products.map(p=>`<tr data-id="${esc(p.id)}"><td><input value="${esc(p.name)}" data-n="name"></td><td><input type="number" value="${+(p.cost*S(p)).toFixed(2)}" data-n="cost"></td><td><input type="number" value="${+(p.wholesale*S(p)).toFixed(2)}" data-n="price"></td><td><input type="number" value="${+(p.stock/S(p)).toFixed(2)}" data-n="stock"></td><td><button class="p" data-sv="1">Save</button> <button class="s" data-rmv="1">Delete</button></td></tr>`).join("")+`</table></div>
+ <h3>Add product</h3><div class="row"><input id="a1" placeholder="Product name"><input id="a2" type="number" placeholder="Cost per sack"><input id="a3" type="number" placeholder="Price per sack"><input id="a4" type="number" placeholder="Stocks (sacks)"><button class="p" id="a5" style="flex:0">Add</button></div>
+ ${products.length?"":'<p><button class="s" id="seed">Load 3 sample products</button></p>'}
+ <p class="mu">One sack = 25 kg. Customers order by the sack at this price.</p>`}
+document.addEventListener("click",async e=>{const t=e.target,tr=t.closest("tr");
+ if(t.dataset.sv&&tr){const p=products.find(x=>x.id===tr.dataset.id),S=p.min||25,v=n=>+tr.querySelector('[data-n="'+n+'"]').value,price=v("price")/S;await db.doc("products/"+p.id).update({name:tr.querySelector('[data-n="name"]').value,cost:v("cost")/S,wholesale:price,retail:price,stock:v("stock")*S});t.textContent="Saved ✓"}
+ if(t.dataset.rmv&&tr&&confirm("Delete this product?"))await db.doc("products/"+tr.dataset.id).delete();
+ if(t.id==="a5"){const name=$("#a1").value.trim();if(!name)return;const price=(+$("#a3").value||0)/25,id=name.toLowerCase().replace(/[^a-z0-9]+/g,"-")+"-"+Date.now().toString(36);await db.doc("products/"+id).set({name,cost:(+$("#a2").value||0)/25,wholesale:price,retail:price,min:25,stock:(+$("#a4").value||0)*25})}});
+function renderMine(){const el=$("#mine");if(!mine.length){el.innerHTML="";return}
+ el.innerHTML='<h2>My orders</h2>'+mine.slice().reverse().map(o=>`<div class="card" style="margin-bottom:10px"><div class="row"><b>${new Date(o.created).toLocaleDateString()}</b><span class="tag ${o.status==="Cancelled"?"low":""}">${esc(lbl[o.status]||o.status)}</span><b>${peso(o.total)}</b></div><div class="mu">${o.items.map(i=>`${esc(i.name)} ${i.kg} kg`).join(", ")}</div>${o.status==="Cancelled"?'<div style="color:var(--wa);margin-top:4px"><b>This order has been cancelled.</b> Please contact us if you have questions.</div>':""}</div>`).join("")}
+function renderAdmin(){if(!isAdmin)return;renderOrders();const f=document.activeElement;if(f&&f.closest&&f.closest("#back")&&/INPUT|SELECT|TEXTAREA/.test(f.tagName))return;renderProd();renderSup();renderCash()}
+(async()=>{
+ renderShop();
+ const user=await claude.use("user");isAdmin=user?await user.canEdit():false;
+ db=await claude.use("db");
+ if(!db){offline=true;products=demo;renderShop();$("#shop").insertAdjacentHTML("afterbegin",'<p class="mu">Preview mode: orders are not being saved.</p>');return}
+ if(isAdmin){$("#nShop").classList.remove("hide");$("#nBack").classList.remove("hide");$("#nBack").click()}
+ const myId=user?await user.id():null;if(myId)db.doc("orders/"+myId).onSnapshot(s=>{mineRaw=s.exists?(s.data().orders||[]):[];mine=mineRaw.map(o=>({...o,...(stat[myId+"_"+o.created]||{})}));renderMine()},()=>{});
+ db.collection("orderStatus").onSnapshot(s=>{stat={};s.docs.forEach(d=>stat[d.id]=d.data());mergeOrders();mine=mineRaw.map(o=>({...o,...(stat[myId+"_"+o.created]||{})}));renderMine();renderAdmin()},()=>{});
+ db.collection("products").onSnapshot(s=>{products=s.docs.map(d=>({id:d.id,...d.data()}));renderShop();renderAdmin()});
+ if(isAdmin){
+  db.collection("orders").onSnapshot(s=>{ordRaw=s.docs.flatMap(d=>(d.data().orders||[]).map((o,i)=>({...o,uid:d.id,idx:i,key:d.id+"_"+o.created,id:d.id+"_"+o.created})));mergeOrders();renderAdmin()});
+  db.collection("supplies").onSnapshot(s=>{supplies=s.docs.map(d=>({id:d.id,...d.data()}));renderAdmin()});
+  db.collection("expenses").onSnapshot(s=>{expenses=s.docs.map(d=>({id:d.id,...d.data()}));renderAdmin()});
+  document.querySelector('[data-t="tOrders"]').click()}
+})();
+</script></body></html>
